@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:id="@+id/idDivider3"
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/grey"
+        android:layout_marginLeft="222dp"
+        android:layout_marginStart="222dp"/>
+
+    <TextView
+        android:id="@+id/idTablePlayedGames"
+        android:text="@string/table_played_games"
+        android:layout_width="25dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@id/idDivider3"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:id="@+id/idDivider4"
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@id/idTablePlayedGames"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/grey"/>
+
+    <TextView
+        android:id="@+id/idTableWonGames"
+        android:text="@string/table_won_games"
+        android:layout_width="25dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@id/idDivider4"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:id="@+id/idDivider5"
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@id/idTableWonGames"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/grey"/>
+
+    <TextView
+        android:id="@+id/idTableDrawGames"
+        android:text="@string/table_draw_games"
+        android:layout_width="25dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@id/idDivider5"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:id="@+id/idDivider6"
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@id/idTableDrawGames"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/grey"/>
+
+    <TextView
+        android:id="@+id/idTableLostGames"
+        android:text="@string/table_lost_games"
+        android:layout_width="25dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@id/idDivider6"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:id="@+id/idDivider7"
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@id/idTableLostGames"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/grey"/>
+
+    <TextView
+        android:id="@+id/idTablePoints"
+        android:text="@string/table_points"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@id/idDivider7"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <View
+        android:id="@+id/idDivider8"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/idDivider3"
+        android:background="@color/grey"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tableRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/idDivider8"
+        app:layout_constraintVertical_bias="0.0" />
+
+   </androidx.constraintlayout.widget.ConstraintLayout>

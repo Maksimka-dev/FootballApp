@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main_graph"
+        app:startDestination="@id/winnersFragment">
+
+    <fragment
+        android:id="@+id/winnersFragment"
+        android:name="com.example.footballapp.presentation.winners.WinnersFragment"
+        android:label="WinnersFragment" >
+        <action
+            android:id="@+id/action_winnersFragment_to_seasonFragment"
+            app:destination="@id/seasonFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/seasonFragment"
+        android:name="com.example.footballapp.presentation.season.SeasonFragment"
+        android:label="SeasonFragment">
+        <argument
+            android:name="season_start_year"
+            app:argType="integer"
+            />
+
+    </fragment>
+</navigation>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Football App</string>
+    <string name="champ_team_image">Champion</string>
+    <string name="app_title">Champions of EPL</string>
+    <string name="team_image">Team emblem</string>
+    <string name="table_position">№</string>
+    <string name="table_played_games">G</string>
+    <string name="table_won_games">W</string>
+    <string name="table_draw_games">D</string>
+    <string name="table_lost_games">L</string>
+    <string name="table_points">P</string>
+    <string name="debug_version">Debug version</string>
+    <string name="no_information_about_champion">No information about Champion</string>
+</resources>

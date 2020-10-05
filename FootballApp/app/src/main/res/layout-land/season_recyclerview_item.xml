@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/idTablePosition"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/idDivider1"
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@id/idTablePosition"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/grey"/>
+
+    <ImageView
+        android:id="@+id/idTableTeamImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:foregroundGravity="center"
+        app:layout_constraintStart_toEndOf="@id/idDivider1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/team_image" />
+
+    <View
+        android:id="@+id/idDivider2"
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@id/idTableTeamImage"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/grey"/>
+
+    <TextView
+        android:id="@+id/idTableTeamName"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintStart_toEndOf="@id/idDivider2"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:id="@+id/idDivider3"
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@id/idTableTeamName"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/grey"/>
+
+    <TextView
+        android:id="@+id/idTablePlayedGames"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@id/idDivider3"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:id="@+id/idDivider4"
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@id/idTablePlayedGames"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/grey"/>
+
+    <TextView
+        android:id="@+id/idTableWonGames"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@id/idDivider4"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:id="@+id/idDivider5"
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@id/idTableWonGames"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/grey"/>
+
+    <TextView
+        android:id="@+id/idTableDrawGames"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@id/idDivider5"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:id="@+id/idDivider6"
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@id/idTableDrawGames"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/grey"/>
+
+    <TextView
+        android:id="@+id/idTableLostGames"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@id/idDivider6"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:id="@+id/idDivider7"
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toEndOf="@id/idTableLostGames"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/grey"/>
+
+    <TextView
+        android:id="@+id/idTablePoints"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@id/idDivider7"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <View
+        android:id="@+id/idDivider8"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/idTablePosition"
+        android:background="@color/grey"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
